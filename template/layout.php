@@ -1,3 +1,10 @@
+<!-- <?php
+	$link = $_SERVER['REQUEST_URI'];
+	$link_array = explode('/',$link);
+	$page = end($link_array);
+	session_start();
+ ?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,11 +64,15 @@
 					<!-- Menu-main -->
 					<div id='cssmenu' class="align-center">
 						<ul>
-						   <li class="active"><a href='index.html'><span>Home</span></a></li>
-							 <li class=""><a href="#"><span>Chart<span></a>
+						   <li class="<?php echo ($page == "") ? 'active':'' ?>"><a href='<?=$web_url ?>/'><span>Home</span></a></li>
+							 <li class="<?php echo ($page == "chart") ? 'active': ''; ?>"><a href='<?=$web_url ?>/index/chart'><span>Chart<span></a>
 						   <!-- <li><a href='single.html'><span>About</span></a></li> -->
-						   <li><a href='archive.html'><span>Login</span></a></li>
-						   <li class='last'><a href='contact.html'><span>Signup</span></a></li>
+								<?php if (!isset($_COOKIE['bearer'])): ?>
+							   <li class= <?php echo ($page == "login") ? 'active': ''; ?>><a href='<?=$web_url ?>/index/login'><span>Login</span></a></li>
+							   <li class="last <?php echo ($page == "register") ? 'active' : ''; ?>"><a href='<?=$web_url ?>/index/register'><span>Signup</span></a></li>
+								<?php else: ?>
+								 <li class="last"><a href='<?=$web_url ?>/index/LOGOUT_USER'><span>Logout</span></a></li>
+								<?php endif;  ?>
 						</ul>
 					</div>
 				</div>
