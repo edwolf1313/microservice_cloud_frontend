@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="<?php echo $assets_url;?>/css/style.css">
 	<!-- Custom Fonts -->
   <link href="<?php echo $assets_url;?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="<?php echo $assets_url;?>/css/menu.css">
 	<script src="<?php echo $assets_url;?>/js/jquery1111.min.js" type="text/javascript"></script>
 	<script src="<?php echo $assets_url;?>/js/script.js"></script>
 	<!-- Owl Carousel Assets -->
@@ -27,11 +27,11 @@
 					<div class="row">
 						<div class="col-2-3">
 							<ul class="list-inline top-link link">
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Instagram</a></li>
+								<li><a href="#">ARC-COMMERCE</a></li>
+								<!-- <li><a href="#">Instagram</a></li>
 								<li><a href="#">Twitter</a></li>
 								<li><a href="#">Google +</a></li>
-								<li><a href="#">Pinterest</a></li>
+								<li><a href="#">Pinterest</a></li> -->
 							</ul>
 						</div>
 						<div class="col-1-3">
@@ -50,32 +50,18 @@
 					</div>
 				</div>
 				<div class="t-center">
-					<a class="site-branding" href="index.html">
-						<img src="<?php echo $assets_url;?>/images/logo.png" width="300px"/>
-					</a><!-- .site-branding -->
+					<!-- <a class="site-branding" href="index.html">
+						<img src="<?php echo $assets_url;?>/images/arc.png" width="300px"/>
+					</a> -->
+					<!-- .site-branding -->
 					<!-- Menu-main -->
 					<div id='cssmenu' class="align-center">
 						<ul>
 						   <li class="active"><a href='index.html'><span>Home</span></a></li>
-						   <li class=' has-sub'><a href='#'><span>Categories</span></a>
-							  <ul >
-								 <li class='has-sub'><a href='#'><span>Item 1</span></a>
-									<ul>
-									   <li><a href='#'><span>Sub Item</span></a></li>
-									   <li class='last'><a href='#'><span>Sub Item</span></a></li>
-									</ul>
-								 </li>
-								 <li class='has-sub'><a href='#'><span>Item 2</span></a>
-									<ul>
-									   <li><a href='#'><span>Sub Item</span></a></li>
-									   <li class='last'><a href='#'><span>Sub Item</span></a></li>
-									</ul>
-								 </li>
-							  </ul>
-						   </li>
-						   <li><a href='single.html'><span>About</span></a></li>
-						   <li><a href='archive.html'><span>Blog</span></a></li>
-						   <li class='last'><a href='contact.html'><span>Contacts</span></a></li>
+							 <li class=""><a href="#"><span>Chart<span></a>
+						   <!-- <li><a href='single.html'><span>About</span></a></li> -->
+						   <li><a href='archive.html'><span>Login</span></a></li>
+						   <li class='last'><a href='contact.html'><span>Signup</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -99,7 +85,8 @@
 					</div>
 				</div>
 				<div class="copyright">
-					Copyright @ - Designed by <a href="https://www.zerotheme.com">ZEROTHEME</a>
+					<!-- Copyright @ - Designed by <a href="https://www.zerotheme.com">ZEROTHEME</a> -->
+					ARC-PROJECT
 				</div>
 			</div>
 		</footer>
