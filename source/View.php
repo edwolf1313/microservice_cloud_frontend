@@ -6,6 +6,7 @@ class View
     protected $template= "";
     protected $assets_url="";
     protected $web_url="";
+    protected $data = [];
     public function __construct()
     {
         $root = str_replace("/", "\\", $_SERVER["DOCUMENT_ROOT"]);
@@ -22,17 +23,35 @@ class View
     {
         $this->view = $view;
     }
+
+    public function set_data($data)
+    {
+        $this->data = $data;
+    }
     public function home()
     {
+        $product_data = $this->data;
         $current_view = $this->view;
         $assets_url= $this->assets_url;
         $web_url= $this->web_url;
+        $product_url = $GLOBALS['product_services'];
+        include $this->template;
+    }
+    public function product()
+    {
+        $product_data = $this->data;
+        $current_view = $this->view;
+        $assets_url= $this->assets_url;
+        $web_url= $this->web_url;
+        $product_url = $GLOBALS['product_services'];
         include $this->template;
     }
     public function chart()
     {
+      $cart_data = $this->data;
       $current_view = $this->view;
       $web_url= $this->web_url;
+      $product_url = $GLOBALS['product_services'];
       $assets_url= $this->assets_url;
       include $this->template;
     }
